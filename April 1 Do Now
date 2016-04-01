@@ -1,0 +1,24 @@
+a = 0
+while a< 100:
+	print a
+"""
+Prediction: It's going to print 0
+Observation:It printed zero and it was going on forever.
+ """
+
+ a = 0
+while a < 100:
+	a = a + 1
+    print a
+"""
+Prediction:It will print 1
+Observation: An error showed up, saying unexpected indent.
+ """
+
+a = raw_input("Would you like to quit: ")
+while a != "y":
+	a = raw_input("Would you like to quit: ")
+"""
+Prediction:Asks you the question, you give it an answer.
+Observation: It keeps asking you the same question until you respond y.
+ """
