@@ -1,0 +1,12 @@
+name = raw_input("What's your name?")
+user_answer = raw_input ("Rock, Paper or Scissors").lower
+import random
+computer = ("Rock, Paper, Scissors")
+computer = (random.choice(computer))
+print computer
+choice = raw_input ("Choose rock, paper or scissors?")
+
+if user_answer == "Rock" and computer == "Paper":
+    print "Computer wins!"
+    else "User wins!"
+    # I still have a lots of work to do. 
