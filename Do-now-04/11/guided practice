@@ -1,0 +1,29 @@
+# what does this function return ?
+def print_only(x):
+   y = x * 2
+   print y
+# how is this one different ?
+def return_only(x):
+   y = x * 2
+   return y
+# let's try to use our 2 functions
+print "running print_only ..."
+print_only(7)
+#multiplies the number put into the () with 2.
+print "running return_only ..."
+return_only(7)
+#Just says running return only
+print "printing print_only ..."
+print print_only(7)
+#prints printing print only and multiplies whatever number is put into the () by 2 so it printed 14 and then none.
+print "printing return_only ..."
+return_only(7)
+#Prints printing return only
+print "using print_only ..."
+print_only(7) + 6
+#An error has occured.
+print "using return_only ..."
+return_only(7) + 6
+#More errors.
+
+
