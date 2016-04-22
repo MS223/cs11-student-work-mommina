@@ -1,0 +1,6 @@
+def de_vowel(some_string):
+    for n in some_string:
+        if n != 'a' and n != 'o' and n != 'e' and n != 'i' and n != 'u':
+            return n
+print de_vowel
+
