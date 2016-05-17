@@ -1,0 +1,23 @@
+text_input = raw_input("Paste your text here")
+text_input = text_input.lower()
+text_input = text_input.replace("."," ")
+words = text_input.split()
+
+my_dictionary = {
+'or' : words.count('or'),
+'are' : words.count('are'),
+'i' : words.count('i'),
+'like' : words.count('like'),
+'as' : words.count('as'),
+'favorite' : words.count('favorite'),
+'make' : words.count('make'),
+'happy': words.count('happy'),
+'great' :words.count('great')
+}
+question = raw_input("What word are you curious about ?")
+print my_dictionary[question]
+
+# I just have a dictionary which has some words and someone is asked to type in a
+# sentence and they are then asked what word they are curious about and if the
+# word is in my dictionary it will tell the person how many times that word
+# appeared. But now I have to figure out how can I let the person choose the words.
