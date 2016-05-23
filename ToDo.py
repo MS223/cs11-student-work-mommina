@@ -10,10 +10,10 @@ days_of_week = {
 "sunday":[]
 }
 def add():
-    question.append
-    days_of_week[day] = question
+    days_of_week[day].append(question)
+add()
 print days_of_week
 
 # trying to get the computer to store the value which is the answer given by
-# someone so that when I print Print days of week it shows that I have something 
-# to do on whatever day that is chosen. 
+# someone so that when I print Print days of week it shows that I have something
+# to do on whatever day that is chosen.
