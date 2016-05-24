@@ -1,5 +1,3 @@
-question = raw_input("What would you like to do?")
-day = raw_input ("What day ?")
 days_of_week = {
 "monday":[],
 "tuesday":[],
@@ -9,11 +7,24 @@ days_of_week = {
 "saturday":[],
 "sunday":[]
 }
-def add():
+def add(day,question):
     days_of_week[day].append(question)
-add()
-print days_of_week
+# add()
 
-# trying to get the computer to store the value which is the answer given by
-# someone so that when I print Print days of week it shows that I have something
-# to do on whatever day that is chosen.
+def get(day,question):
+    days_of_week[day].append(question)
+# get()
+
+def choice():
+    user_choice = raw_input("How can I help you?")
+    while user_choice != "exit":
+        if user_choice == "get":
+            day = raw_input ("What day ?")
+            get(day)
+        elif user_choice == "add":
+            question = raw_input("What would you like to do?")
+            day = raw_input ("what day?")
+            add(day,question)
+choice()
+
+
