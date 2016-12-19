@@ -1,0 +1,23 @@
+var score = 0; 
+x = 10;
+y = 20;
+var button;
+
+function setup() {
+	createCanvas(400, 300);
+	background(0);
+	button = createButton("No");
+	button.mousePressed(randomRectangle);
+}
+
+function draw() {
+	text(score, 15 ,15);
+	button.position(x, y);
+}
+
+function randomRectangle() {
+	x = random(300);
+	y = random(300);
+	background(random(255), random(255), random(255));
+	score = score +1; 
+}
